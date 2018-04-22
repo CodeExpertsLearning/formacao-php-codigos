@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1492871845">
+  <project timestamp="1492871845">
+    <package name="App\Entity">
+      <file name="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/projeto/src/App/Entity/Entity.php">
+        <class name="Entity" namespace="App\Entity">
+          <metrics complexity="8" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="26" coveredelements="26"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="14" type="stmt" count="2"/>
+        <line num="15" type="stmt" count="2"/>
+        <line num="17" type="method" name="__get" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="22" type="method" name="__set" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="27" type="method" name="insert" visibility="public" complexity="5" crap="5" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <metrics loc="55" ncloc="55" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="26" coveredelements="26"/>
+      </file>
+      <file name="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/projeto/src/App/Entity/Product.php">
+        <class name="Product" namespace="App\Entity">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App">
+      <file name="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/projeto/src/App/TestCase.php">
+        <class name="TestCase" namespace="App">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+        </class>
+        <line num="8" type="method" name="setUp" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="10" type="stmt" count="2"/>
+        <line num="11" type="stmt" count="2"/>
+        <line num="18" type="stmt" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="21" type="method" name="tearDown" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <metrics loc="25" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <metrics files="3" loc="88" ncloc="88" classes="2" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="28" elements="34" coveredelements="34"/>
+  </project>
+</coverage>

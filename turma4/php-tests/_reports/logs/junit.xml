@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Formacao_Tests" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.047268">
+    <testsuite name="SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma4/php-tests/tests/App/Model/SomaTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.023240">
+      <testcase name="testSomaDoisNumeros" class="SomaTest" classname="SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma4/php-tests/tests/App/Model/SomaTest.php" line="8" assertions="2" time="0.019918"/>
+      <testcase name="testNaoPassagemDeParametrosPraMinhaSoma" class="SomaTest" classname="SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma4/php-tests/tests/App/Model/SomaTest.php" line="20" assertions="1" time="0.003322"/>
+    </testsuite>
+    <testsuite name="SomaServiceTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma4/php-tests/tests/App/Service/SomaServiceTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.024028">
+      <testcase name="testSeServiceRealizaOperacoesDeSoma" class="SomaServiceTest" classname="SomaServiceTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma4/php-tests/tests/App/Service/SomaServiceTest.php" line="8" assertions="1" time="0.024028"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Projeto Formação PHP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 30px;">
+   <div class="container">
+       <a class="navbar-brand" href="<?=HOME;?>">LOJA</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                   <a class="nav-link" href="<?=HOME;?>">Home
+                       <span class="sr-only">(current)</span></a>
+               </li>
+           </ul>
+       </div>
+       <ul class="navbar-nav mr-auto pull-right">
+           <li class="nav-item active">
+			   <?php \Code\Service\SessionService::sessionStart();?>
+               <a class="nav-link" href="<?=HOME;?>cart" style="position: relative">
+                   <i class="fa fa-2x fa-shopping-cart"></i>
+				   <?php if(isset($_SESSION['products'])):?>
+                       <span class="badge badge-danger" style="position: absolute; top: 3px; right: 0;">
+                               <?=count($_SESSION['products']);?>
+                           </span>
+				   <?php endif;?>
+                   <span class="sr-only">(current)</span>
+               </a>
+           </li>
+       </ul>
+   </div>
+</nav>

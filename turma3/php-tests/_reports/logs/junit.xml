@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="FORMACAO PHP" tests="2" assertions="5" failures="0" errors="0" time="0.023263">
+    <testsuite name="App\SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/php-tests/tests/App/SomaTest.php" tests="2" assertions="5" failures="0" errors="0" time="0.023263">
+      <testcase name="testSomaDoisNumeros" class="App\SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/php-tests/tests/App/SomaTest.php" line="15" assertions="3" time="0.006814"/>
+      <testcase name="testParametrosInvalidos" class="App\SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/php-tests/tests/App/SomaTest.php" line="26" assertions="2" time="0.016449"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

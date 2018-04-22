@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1491661715">
+  <project timestamp="1491661715">
+    <package name="App">
+      <file name="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/php-tests/src/App/Soma.php">
+        <class name="Soma" namespace="App">
+          <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+        </class>
+        <line num="6" type="method" name="somar" visibility="public" complexity="3" crap="3" count="2"/>
+        <line num="8" type="stmt" count="2"/>
+        <line num="9" type="stmt" count="1"/>
+        <line num="10" type="stmt" count="2"/>
+        <line num="11" type="stmt" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+      </file>
+    </package>
+    <metrics files="1" loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+  </project>
+</coverage>

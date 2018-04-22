@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<?php require __DIR__ . '/includes/header.phtml'; ?>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Produto</h1>
+  </div>
+</div>
+<div class="col-md-12">
+  <?php require __DIR__ . '/includes/messages.phtml';?>
+</div>
+<div class="container">
+<!-- Example row of columns -->
+<div class="row">
+  <div class="col-md-12">
+  </div>
+  <div class="col-md-12">
+    <div class="col-md-6">
+      <p>
+        <?php if(file_exists($thumb = "/assets/img/uploads/products/" . $this->product['thumb'])):?>
+              <img src="<?=$thumb;?>" alt="">
+        <?php else:?>
+          <img src="/assets/img/img.jpg" alt="" class="img-responsive">
+        <?php endif;?>
+      </p>
+      
+    </div>
+    <div class="col-md-6">
+      <h2><?=$this->product['name'];?></h2>
+      <p>
+        <?=$this->product['description'];?> ...
+      </p>
+      <p class="pull-right">
+        <span class="btn btn-danger">
+          R$ <?=number_format($this->product['price'], 2,',', '.');?>
+        </span>
+        <a class="btn btn-success" href="/cart/add/<?=$this->product['slug'];?>" role="button">
+      <span class="glyphicon glyphicon-shopping-cart"></span>
+       Adicionar Ao Carrinho
+      </a></p>
+    </div>
+  </div>
+</div>
+<?php require __DIR__ . '/includes/footer.phtml';?>

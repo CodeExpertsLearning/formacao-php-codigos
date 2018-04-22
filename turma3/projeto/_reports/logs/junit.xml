@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="FORMACAO PHP" tests="3" assertions="6" failures="0" errors="0" time="0.021440">
+    <testsuite name="App\Entity\ProductTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/projeto/tests/App/Entity/ProductTest.php" tests="3" assertions="6" failures="0" errors="0" time="0.021440">
+      <testcase name="testSetterEGetters" class="App\Entity\ProductTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/projeto/tests/App/Entity/ProductTest.php" line="8" assertions="1" time="0.005476"/>
+      <testcase name="testInserirNovoProdutoNaBaseDeDados" class="App\Entity\ProductTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/projeto/tests/App/Entity/ProductTest.php" line="24" assertions="2" time="0.013348"/>
+      <testcase name="testAtualizarProdutoNaBaseDeDados" class="App\Entity\ProductTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma3/projeto/tests/App/Entity/ProductTest.php" line="40" assertions="3" time="0.002616"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

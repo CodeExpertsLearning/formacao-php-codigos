@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Formacao_Tests" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.046776">
+    <testsuite name="SomaServiceTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma5/php-tests/tests/SomaServiceTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.030282">
+      <testcase name="testSomaViaService" class="SomaServiceTest" classname="SomaServiceTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma5/php-tests/tests/SomaServiceTest.php" line="8" assertions="1" time="0.030282"/>
+    </testsuite>
+    <testsuite name="SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma5/php-tests/tests/SomaTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.016494">
+      <testcase name="testSomaDoisNumerosERetornaResultadoX" class="SomaTest" classname="SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma5/php-tests/tests/SomaTest.php" line="8" assertions="3" time="0.011766"/>
+      <testcase name="testFalhaAoNaoPassarUmValor" class="SomaTest" classname="SomaTest" file="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma5/php-tests/tests/SomaTest.php" line="29" assertions="2" time="0.004728"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

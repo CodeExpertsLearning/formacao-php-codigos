@@ -1,0 +1,11 @@
+{
+    "autoload":{
+        "psr-4": {
+            "CodeExperts\\" : "src/"
+         }
+    },
+    "require": {
+        "phpsc/pagseguro": "dev-master",
+        "symfony/http-foundation": "^3.1"
+    }
+}

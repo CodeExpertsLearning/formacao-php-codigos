@@ -1,0 +1,15 @@
+<?php require_once __DIR__ . '/includes/header.phtml'; ?>
+<div class="row">
+    <div class="row">
+    	<div class="container">
+    		<h1>
+    			<?php if(isset($_SESSION['user'])): ?>
+    				Olá, <?=$_SESSION['user']['name'];?>
+    			<?php else: ?>
+    				<h1>Olá</h1>
+    			<?php endif;?>
+    		</h1>
+    	</div>
+    </div>
+</body>
+<?php require_once __DIR__ . '/includes/footer.phtml'; ?>

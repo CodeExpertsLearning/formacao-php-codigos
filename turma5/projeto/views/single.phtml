@@ -1,0 +1,38 @@
+<?php require VIEWS_PATH . '/includes/header.phtml';?>
+<div class="container">
+    <div class="col-md-12">
+		<?php require __DIR__ . '/includes/messages.phtml';?>
+    </div>
+	<div class="row">
+        <?php if(!$this->product):?>
+            <div class="alert alert-warning">
+                Nenhum produto encontrado!
+            </div>
+        <?php else: ?>
+            <div class="col-md-6">
+                <div class="row" style="margin-bottom: 10px;">
+                    <img src="http://via.placeholder.com/550x250?text=CODE" alt="" class="img-responsive">
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><img src="http://via.placeholder.com/50X50?textCODE" alt=""></div>
+                    <div class="col-md-2"><img src="http://via.placeholder.com/50X50?textCODE" alt=""></div>
+                    <div class="col-md-2"><img src="http://via.placeholder.com/50X50?textCODE" alt=""></div>
+                    <div class="col-md-2"><img src="http://via.placeholder.com/50X50?textCODE" alt=""></div>
+                    <div class="col-md-2"><img src="http://via.placeholder.com/50X50?textCODE" alt=""></div>
+                    <div class="col-md-2"><img src="http://via.placeholder.com/50X50?textCODE" alt=""></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1><?=$this->product['name'];?></h1>
+                <p>
+                    <?=$this->product['description'];?>
+                </p>
+                <h3>
+                    R$ <?=number_format($this->product['price'], 2, ',', '.');?>
+                </h3>
+                <a href="<?=HOME;?>cart/add/<?=$this->product['slug'];?>" class="btn btn-lg btn-success">COMPRAR</a>
+            </div>
+        <?php endif;?>
+	</div>
+</div>
+<?php require VIEWS_PATH . '/includes/footer.phtml';?>

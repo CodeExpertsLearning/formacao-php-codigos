@@ -1,0 +1,81 @@
+/* @font-face{
+  src: url('../fonts/OpenSans-Light.ttf');
+  font-family: 'Open Sans';
+} */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+/**
+ * Reset básico
+ **/
+* {
+  margin: 0;
+  padding: 0;   
+}
+body {
+  text-align: center;
+  font-family: 'Open Sans', Helvetica;
+}
+
+/**
+ ID -> No css referenciado pela #
+ Classes -> No css referenciado pelo .
+ */
+ .header {
+  width: 100%; 
+  background: linear-gradient(#079 89%, #f00);
+  display: table;
+ }
+ .header section {
+    width: 1024px;
+    background: #fff;
+    margin: 0 auto;
+ }
+.menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu .item {
+  float: left;
+  position: relative;
+}
+.menu .item a {
+  float: left;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: background .4s 
+    ease-in-out;
+
+}
+.menu .item a:hover {
+    background: #fff;
+    color: #000;
+}
+/* 
+Active quando você clica sobre o elemento
+.menu .item a:active {
+    background: #069;
+    color: #000;
+}
+Visited que você já visitou o link em
+questão
+.menu .item a:visited {
+    background: #978;
+    color: #000;
+} */
+
+.menu .item .submenu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  background: #000;
+}
+.menu .item .submenu .item a{
+  float: none !important;
+  display: block;
+  width: 150px;
+}
+.menu .item:hover .submenu{
+  display: block;
+}

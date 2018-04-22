@@ -1,0 +1,6 @@
+{
+    "name": "pirishe/word-doc-parser",
+    "autoload": {
+        "psr-4": {"WordDocParser\\": "./"}
+    }
+}

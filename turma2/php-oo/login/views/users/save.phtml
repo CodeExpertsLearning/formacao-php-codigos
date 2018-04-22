@@ -1,0 +1,37 @@
+<?php require_once $views . '/includes/header.phtml'; ?>
+	<div class="row">
+	    <div class="row">
+	    	<div class="container">
+	    		<h1>
+					Salvar usuário
+	    		</h1>
+	    	</div>
+	    </div>
+		<div class="container">
+		    <?php if(isset($msg)): unset($_SESSION['msg']); ?>
+				<div class="alert alert-success">
+					<?=$msg;?>
+				</div>
+		    <?php endif;?>
+			<form method="post" action="/?p=users">
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Nome Completo</label>
+			    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome Completo" name="name">
+			  </div>
+
+			 <div class="form-group">
+			    <label for="exampleInputEmail1">Email</label>
+			    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
+			  </div>
+
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Senha</label>
+			    <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Senha" name="password">
+			  </div>
+ 
+			  <button type="submit" class="btn btn-lg btn-success">Acessar</button>
+			</form>
+		</div>
+	</div>
+</body>
+<?php require_once $views . '/includes/footer.phtml'; ?>

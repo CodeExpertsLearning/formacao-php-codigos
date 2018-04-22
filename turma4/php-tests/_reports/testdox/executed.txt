@@ -1,0 +1,7 @@
+Soma
+ [x] Soma dois numeros
+ [x] Nao passagem de parametros pra minha soma
+
+SomaService
+ [x] Se service realiza operacoes de soma
+

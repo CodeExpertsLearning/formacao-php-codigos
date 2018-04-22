@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Loja PHP" tests="3" assertions="3" failures="0" errors="0" time="0.015389">
+    <testsuite name="App\SomaTest" file="/Users/NandoKstroNet/projects/php/php-tests/tests/SomaTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.009228">
+      <testcase name="testRealizaSoma" class="App\SomaTest" file="/Users/NandoKstroNet/projects/php/php-tests/tests/SomaTest.php" line="15" assertions="1" time="0.006003"/>
+      <testcase name="testRealizaOutraSoma" class="App\SomaTest" file="/Users/NandoKstroNet/projects/php/php-tests/tests/SomaTest.php" line="20" assertions="1" time="0.003225"/>
+    </testsuite>
+    <testsuite name="App\SubtracaoTest" file="/Users/NandoKstroNet/projects/php/php-tests/tests/SubtracaoTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.006161">
+      <testcase name="testRealizaSubtracao" class="App\SubtracaoTest" file="/Users/NandoKstroNet/projects/php/php-tests/tests/SubtracaoTest.php" line="15" assertions="1" time="0.006161"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

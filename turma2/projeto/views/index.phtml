@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<?php require __DIR__ . '/includes/header.phtml'; ?>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Bem Vindo!</h1>
+        <p></p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button"></a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+      <?php foreach($this->products as $p):?>
+      
+        <div class="col-md-4">
+          <h2><?=$p['name'];?></h2>
+
+          <?php if(file_exists($thumb = "/assets/img/uploads/products/" . $p['thumb'])):?>
+            <img src="<?=$thumb;?>" alt="">
+          <?php else:?>
+            <img src="/assets/img/img.jpg" alt="" class="img-responsive">
+          <?php endif;?>
+
+          <p>R$ <?=number_format($p['price'], 2, ",", ".");?></p>
+          <p><a class="btn btn-success" href="/produto/view/<?=$p['slug'];?>" role="button">Ver mais &raquo;</a></p>
+        </div>
+
+      <?php endforeach;?>
+
+      <hr>
+<?php require __DIR__ . '/includes/footer.phtml';?>

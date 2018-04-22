@@ -1,0 +1,16 @@
+{
+    "require": {
+        "phpsc/pagseguro": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "" : "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin/"
+    }
+}

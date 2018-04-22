@@ -1,0 +1,17 @@
+<?php foreach($this->session->getFlashBag()->get('success') as $key => $message):?>
+    <div class="alert alert-success">
+    	<?=$message;?>
+    </div>
+<?php endforeach ?>
+
+<?php foreach($this->session->getFlashBag()->get('error') as $key => $message):?>
+    <div class="alert alert-danger">
+    	<?=$message;?>
+    </div>
+<?php endforeach ?>
+
+<?php foreach($this->session->getFlashBag()->get('warning') as $key => $message):?>
+    <div class="alert alert-warning">
+    	<?=$message;?>
+    </div>
+<?php endforeach ?>

@@ -1,0 +1,7 @@
+App\Soma
+ [x] Realiza soma
+ [x] Realiza outra soma
+
+App\Subtracao
+ [x] Realiza subtracao
+

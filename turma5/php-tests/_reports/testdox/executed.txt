@@ -1,0 +1,7 @@
+SomaService
+ [x] Soma via service
+
+Soma
+ [x] Soma dois numeros e retorna resultado x
+ [x] Falha ao nao passar um valor
+

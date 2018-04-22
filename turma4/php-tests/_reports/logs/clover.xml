@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1512297246">
+  <project timestamp="1512297246">
+    <package name="App\Model">
+      <file name="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma4/php-tests/src/App/Model/Soma.php">
+        <class name="App\Model\Soma" namespace="App\Model">
+          <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="6" type="method" name="somar" visibility="public" complexity="3" crap="3" count="2"/>
+        <line num="8" type="stmt" count="2"/>
+        <line num="9" type="stmt" count="2"/>
+        <line num="10" type="stmt" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+    </package>
+    <package name="App\Service">
+      <file name="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma4/php-tests/src/App/Service/SomaService.php">
+        <class name="App\Service\SomaService" namespace="App\Service">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+        </class>
+        <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="15" type="method" name="doSoma" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <metrics loc="20" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+      </file>
+    </package>
+    <package name="App">
+      <file name="/Users/NandoKstroNet/projects/learning/formacao_php_2/turma4/php-tests/src/App/TestCase.php">
+        <class name="App\TestCase" namespace="App">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
+        </class>
+        <line num="9" type="method" name="getSomaMock" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <metrics loc="23" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <metrics files="3" loc="57" ncloc="51" classes="3" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="19" coveredelements="19"/>
+  </project>
+</coverage>

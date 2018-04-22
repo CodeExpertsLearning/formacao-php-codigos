@@ -1,0 +1,11 @@
+{
+    "require": {
+        "pirishe/word-doc-parser": "^0.3.0",
+        "monolog/monolog": "^1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeExperts\\": "src/"
+        }
+    }
+}

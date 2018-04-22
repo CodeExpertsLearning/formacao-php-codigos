@@ -1,0 +1,5 @@
+App\Entity\Product
+ [x] Setter e getters
+ [x] Inserir novo produto na base de dados
+ [x] Atualizar produto na base de dados
+
