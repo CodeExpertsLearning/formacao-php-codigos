@@ -79,3 +79,112 @@ questão
 .menu .item:hover .submenu{
   display: block;
 }
+
+/**
+ Background sessions
+*/
+#home {
+  background: url(https://iguatemi.com.br/saocarlos/sites/saocarlos/files/styles/crop_blog_1920x720/public/20916-destaque.jpg?itok=uB7VFMfQ) top center no-repeat;
+}
+
+/**
+ Padding
+*/
+.paddingTop {
+   padding-top: 10%;
+}
+/**
+  Row 
+*/
+.row {
+   width: 100%;
+   height: 550px;
+}
+.row .container {
+  width: 1250px;
+  height: 350px;
+  margin: 0 auto;
+}
+.row .container h1,
+.row .container h4  {
+  color: #fff;
+  margin-bottom: 20px; 
+  background: rgba(0, 0, 0, .6);
+  padding: 10px;
+}
+
+/**
+   btn
+*/
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  background: #999;
+  text-shadow: 1px 1px 0px #000;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #333;
+}
+.btn-green {
+  background: #228B22;
+}
+.btn-green:hover {
+  background: #006400;
+}
+
+/**
+Featured
+*/
+.featured {
+  width: 630px;
+  padding: 10px;
+  float: left;
+}
+
+.featured a,
+.featuredList ul li a {
+  color: #000;
+  text-align: left;
+  text-decoration: none;
+}
+.featured a img {
+  margin-bottom: 10px;
+}
+.featured a h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.featuredList {
+  width: 580px;
+  padding: 10px;
+  float: right;
+}
+.featuredList ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.featuredList ul li:first-child {
+  padding-top: 0 !important;
+}
+.featuredList ul li {
+  width: 90%;
+  padding: 5%;
+  display: table;
+}
+.featuredList ul li a img {
+  float: left;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
