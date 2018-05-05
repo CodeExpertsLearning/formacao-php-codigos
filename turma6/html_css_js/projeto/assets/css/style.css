@@ -22,7 +22,8 @@ body {
  */
  .header {
   width: 100%; 
-  background: linear-gradient(#079 89%, #f00);
+  background: #000;
+  border-bottom: 3px solid orange;
   display: table;
  }
  .header section {
@@ -68,7 +69,7 @@ questão
 .menu .item .submenu {
   display: none;
   position: absolute;
-  top: 38px;
+  top: 47px;
   background: #000;
 }
 .menu .item .submenu .item a{
