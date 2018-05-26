@@ -6,13 +6,17 @@ var element = document.querySelector('.container');
 /**
  * Aplica o atributo style ao elemento selecionado
  * com o set de configurações abaixo
+ * <div class="container" style="width: 150px; height: 150px; background: #069;"></div>
  */
 element.style = 'width: 150px; height: 150px; background: #069;';
 
 /**
  * Adiciona um conteúdo de texto puro
+ * <div class="container" style="width: 150px; height: 150px; background: #069;">
+ *    Conteudo via JS
+ * </div>
  */
-element.textContent = 'Conteudo via JS';
+element.textContent = '<p>Conteudo via JS';
 
 /**
  * Adiciona html ao conteudo da nossa div Container
