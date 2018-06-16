@@ -1,0 +1,29 @@
+<?php require VIEWS_PATH . 'includes/header.phtml'; ?>
+<div class="container">
+	<div class="col">
+		<h1>Cadastro de Usuário</h1>
+		<hr>
+	</div>
+	<div class="col">
+		<form action="<?=HOME;?>/save" method="post">
+			<div class="form-group">
+				<label>Nome Completo</label>
+				<input type="text" class="form-control" name="nome">
+			</div>
+
+			<div class="form-group">
+				<label>E-mail</label>
+				<input type="text" class="form-control" name="email">
+			</div>
+
+			<div class="form-group">
+				<label>Telefone</label>
+				<input type="text" class="form-control" name="telefone">
+			</div>
+			<div class="form-group text-center">
+				<input type="submit" class="btn btn-success btn-lg" name="salvar" value="Salvar">
+			</div>
+		</form>
+	</div>
+</div>
+<?php require VIEWS_PATH . 'includes/footer.phtml'; ?>

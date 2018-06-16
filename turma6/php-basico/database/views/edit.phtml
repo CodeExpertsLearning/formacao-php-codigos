@@ -1,0 +1,33 @@
+<?php require VIEWS_PATH . 'includes/header.phtml'; ?>
+<div class="container">
+	<div class="col">
+		<h1>Editar Usuário</h1>
+		<hr>
+	</div>
+	<div class="col">
+		<form action="<?=HOME;?>/edit" method="post">
+			<div class="form-group">
+				<label>Nome Completo</label>
+				<input type="text" class="form-control" name="nome"
+                value="<?=$user['nome'];?>">
+			</div>
+
+			<div class="form-group">
+				<label>E-mail</label>
+				<input type="text" class="form-control" name="email"
+                value="<?=$user['email'];?>">
+			</div>
+
+			<div class="form-group">
+				<label>Telefone</label>
+				<input type="text" class="form-control" name="telefone"
+                value="<?=$user['telefone'];?>">
+			</div>
+            <input type="hidden" name="user_id" value="<?=$user['id'];?>">
+			<div class="form-group text-center">
+				<input type="submit" class="btn btn-success btn-lg" value="Atualizar">
+			</div>
+		</form>
+	</div>
+</div>
+<?php require VIEWS_PATH . 'includes/footer.phtml'; ?>
