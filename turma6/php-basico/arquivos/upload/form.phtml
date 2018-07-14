@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload de Arquivo</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<form action="" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+			<label>Enviar arquivos</label>
+			<input type="file" class="form-control" name="photo[]" multiple>
+		</div>
+		<div class="form-group text-center">
+			<button type="submit" class="btn btn-success btn-lg">Enviar Fotos</button>
+		</div>
+	</form>
+    <hr>
+    <div class="row">
+        <?php foreach($images as $i): ?>
+        <div class="col-4">
+            <img src="/upload/uploaded_files/<?=substr(strrchr($i, '/'), 1);?>" alt="" class="img-fluid">
+        </div>
+        <?php endforeach;?>
+    </div>
+</div>
+</body>
+</html>
