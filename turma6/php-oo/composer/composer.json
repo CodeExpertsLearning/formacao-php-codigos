@@ -1,0 +1,9 @@
+{
+   "require": {
+      "monolog/monolog": "*",
+      "valdiney/upload-files": "dev-master"
+    },
+   "require-dev": {
+      "phpunit/phpunit": "^7.3"
+   }
+}

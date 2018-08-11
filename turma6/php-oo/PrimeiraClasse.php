@@ -2,14 +2,14 @@
 
 class PrimeiraClasse
 {
-	private $name;
+	protected $name;
 
 	public function getName()
 	{
 		return $this->name;
 	}
 
-	public function setName( $name )
+	public function setName($name)
 	{
 		$this->name = $name;
 	}
