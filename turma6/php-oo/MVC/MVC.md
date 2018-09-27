@@ -1,0 +1,8 @@
+# MVC
+ 
+ 
+ Model -  
+ View 
+ Controller
+ 
+ 
