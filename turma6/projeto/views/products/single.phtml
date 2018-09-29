@@ -1,0 +1,12 @@
+<?php require VIEWS_PATH . '/includes/header.phtml';?>
+
+    <div class="container">
+        <h1>Single Produto: <?=$product['name'];?></h1>
+        Preço R$ <?=number_format($product['price'], 2, ',', '.');?>
+        <hr>
+        <a href="#" class="btn btn-lg btn-success float-right">
+            Comprar
+        </a>
+    </div>
+
+<?php require VIEWS_PATH . '/includes/footer.phtml';?>

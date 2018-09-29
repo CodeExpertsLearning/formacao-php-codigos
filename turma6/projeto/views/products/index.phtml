@@ -1,0 +1,16 @@
+<?php require VIEWS_PATH . '/includes/header.phtml';?>
+
+<div class="container">
+
+    <h1>Produtos</h1>
+    <hr>
+	<?php foreach ($products as $p):?>
+        <li>
+			<?=$p['name'];?> -
+            R$ <?=number_format($p['price'], 2, ',', '.');?> -
+            <a href="<?=HOME;?>/product/view/<?=$p['id'];?>">Ver Produto</a>
+        </li>
+	<?php endforeach;?>
+</div>
+
+<?php require VIEWS_PATH . '/includes/footer.phtml';?>
