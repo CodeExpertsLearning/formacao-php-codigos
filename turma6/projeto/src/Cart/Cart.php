@@ -1,7 +1,6 @@
 <?php
 namespace Cart;
 
-use Entity\Product;
 use Session\Session;
 
 class Cart
@@ -16,7 +15,7 @@ class Cart
          return $products;
 	}
 
-	public function addProduct(ProductItem $product)
+	public function addProduct($product)
 	{
 		$products = Session::get('products');
 

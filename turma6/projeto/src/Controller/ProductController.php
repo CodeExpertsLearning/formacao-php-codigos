@@ -7,11 +7,14 @@ use View\View;
 
 class ProductController
 {
-	public function view(int $id = null)
+	public function view(string $slug = null)
 	{
 		try {
-			$product = (new Product(Connection::getInstace()))->find($id);
+			$product = current((new Product(Connection::getInstace()))
+						->where(['slug' => $slug]));
+
 			return View::render('products/single', compact('product'));
+
 		} catch (\Exception $e) {
 			return $e->getMessage();
 		}

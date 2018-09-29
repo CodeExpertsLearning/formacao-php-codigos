@@ -4,7 +4,7 @@
         <h1>Single Produto: <?=$product['name'];?></h1>
         Preço R$ <?=number_format($product['price'], 2, ',', '.');?>
         <hr>
-        <a href="#" class="btn btn-lg btn-success float-right">
+        <a href="<?=HOME;?>/cart/add/<?=$product['slug'];?>" class="btn btn-lg btn-success float-right">
             Comprar
         </a>
     </div>

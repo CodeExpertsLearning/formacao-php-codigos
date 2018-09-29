@@ -8,7 +8,7 @@
         <li>
 			<?=$p['name'];?> -
             R$ <?=number_format($p['price'], 2, ',', '.');?> -
-            <a href="<?=HOME;?>/product/view/<?=$p['id'];?>">Ver Produto</a>
+            <a href="<?=HOME;?>/product/view/<?=$p['slug'];?>">Ver Produto</a>
         </li>
 	<?php endforeach;?>
 </div>
