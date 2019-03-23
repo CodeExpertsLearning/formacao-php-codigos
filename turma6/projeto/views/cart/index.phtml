@@ -2,7 +2,7 @@
 <div class="container">
 	<h1>Carrinho de Compras</h1>
 	<hr>
-	<table>
+	<table class="table">
 		<thead>
 			<tr>
 				<td>#</td>
@@ -11,11 +11,21 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
+            <?php foreach($products as $p):?>
+                <tr>
+                    <td>#</td>
+                    <td><?=$p['name'];?></td>
+                    <td>
+                        R$ <?=number_format($p['price'], 2, ',', '.');?> |
+                        <a href="<?=HOME;?>/cart/remove/<?=$p['slug'];?>">REMOVER</a>
+                    </td>
+                </tr>
+            <?php endforeach;?>
+            <tr>
+                <td></td>
+                <td>Total: </td>
+                <td>R$ <?=number_format($total, 2, ',', '.');?></td>
+            </tr>
 		</tbody>
 	</table>
 </div>

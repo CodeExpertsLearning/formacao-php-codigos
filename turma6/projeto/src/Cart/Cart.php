@@ -36,7 +36,7 @@ class Cart
 			return false;
 
 		$products = array_filter($products, function($p) use($slug){
-			return $p->slug != $slug;
+			return $p != $slug;
 		});
 
 		Session::set('products', $products);

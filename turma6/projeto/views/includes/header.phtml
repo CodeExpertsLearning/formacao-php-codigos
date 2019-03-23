@@ -11,7 +11,12 @@
 <body>
 <div class="row">
     <div class="container" style="padding: 10px 0px;">
-        <a href="<?=HOME;?>/cart/index" class="btn btn-sm btn-primary float-right">CART</a>
+        <a href="<?=HOME;?>/cart/index" class="btn btn-sm btn-primary float-right">
+            CART
+            <?php if($productsCount = (new \Cart\Cart())->showProducts()):?>
+                | <?=count($productsCount);?>
+            <?php endif;?>
+        </a>
     </div>
 </div>
 
