@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulários HTML</title>
+    </head>
+    <body>
+        <h1>Formulários</h1>
+     
+        <hr>
+
+        <form name="primeiroForm" 
+              action="#" method="get">
+            <p>
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Digite se nome aqui...">
+            </p>
+
+            <p>
+                <label>E-mail:</label>
+                <input type="email" name="email">
+            </p>
+
+            <p>
+                <label>Senha:</label>
+                <input type="password" name="senha">
+            </p>
+
+            <p>
+                <label>Aceita Termos:</label>
+                <input type="checkbox" name="aceita_termo">
+            </p>
+
+            <p>
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" value="m"> 
+                Masculino
+                <input type="radio" name="sexo" value="f"> 
+                Feminino
+            </p>
+
+            <p>
+                <label>Idade:</label>
+                <input type="number" name="idade">
+            </p>
+
+            <p>
+                <label>Entre:</label>
+                10 <input type="range" name="entre" max="40"> 40
+            </p>
+
+            <p>
+                <label>Foto</label>
+                <input type="file" name="foto">
+                <!-- <input type="file" name="foto[]" multiple> -->
+            </p>
+            
+            <p>
+                <label>Cidade</label>
+                <select name="cidade">
+                    <option value="slz">São Luis</option>
+                    <option value="itz">Imperatriz</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Papéis</label>
+                <select name="papeis[]" multiple>
+                    <option value="adm">Adm</option>
+                    <option value="cood">Coord</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Descrição</label>
+                <textarea name="descricao" rows="50" cols="30">Disjdisjdijsdijsid</textarea>
+            </p>
+
+            <p>
+                Color: <input type="color" name="cores"> <br>
+                Data: <input type="date"> 
+                Data & Hora: <input type="datetime-local"><br>
+                Url: <input type="url">
+            </p>
+            <!-- <input type="submit" name="send" value="Enviar"> -->
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
