@@ -1,0 +1,101 @@
+<html>
+    
+    <head>
+        <title>Formulário Html</title>
+    </head>
+    
+    <body>
+        <h1>Formulário HTML</h1>
+        <hr>
+         <!--
+             GET
+             POST
+             PUT
+             DELETE
+             OPTIONS
+         -->
+        <form action="#" method="get">
+            <p>
+                <label>Nome</label>
+                <input type="text"
+                       name="nome" 
+                       placeholder="Digite seu nome aqui..." 
+                       value="Nanderson Castro">
+            </p>
+
+            <p>
+                <label>Email</label>   
+                <input type="email" name="email">
+            </p>
+
+            <p>
+                <label>Senha</label>
+                <input type="password" name="senha">
+            </p>
+
+            <p>
+                <label>Idade</label>
+                <input type="number" name="idade">
+            </p>
+
+            <p>
+                <label>Data de Nascimento</label>
+                <input type="date" name="d_nascimento">
+            </p>
+            
+            <p>
+                <label>Range</label>
+                1<input type="range" name="range" min="1" max="10"> 10
+            </p>
+            <p>
+                <label>Seu site favorito</label>
+                <input type="url" name="site_favorito">
+            </p>
+            <p>
+                <label>Selecione sua cor favorita</label>
+                <input type="color" name="cor_favorita">
+            </p>
+            <p>
+                <label>Sexo</label>
+                <input type="radio" name="sexo" value="M"> Masc.
+
+                <input type="radio" name="sexo" value="F"> Fem.
+            </p>
+
+            <p>
+                <label>Têm necessidades especiais</label>
+                <input type="checkbox" 
+                       name="tem_necessidades_especiais">
+            </p>
+            <p>
+                <label>Sua Cidade</label>
+               <select name="sua_cidade">
+                <option value="slz">São Luis</option>    
+                <option value="itz">Imperatriz</option>
+               </select> 
+            </p>
+            <p>
+                <label>Sua série favorita</label>
+                <select name="series_favoritas" 
+                        multiple>
+                    <option value="teste">Teste</option>
+                    <option value="teste2">Teste 2</option>
+                </select>
+            </p>
+            <p>
+                <label>Fale sobre você</label>
+                <textarea name="sobre_vc" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label>Envia sua foto</label>
+                <input type="file" name="sua_foto">
+            </p>
+            <p>
+               <!-- <input type="submit" value="Enviar"> -->
+               <button type="submit">Enviar</button>
+            </p>
+        </form>
+
+    </body>
+
+</html>
