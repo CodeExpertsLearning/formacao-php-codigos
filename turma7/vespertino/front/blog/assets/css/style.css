@@ -1,0 +1,92 @@
+/*
+  Resete CSS
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px; 
+   text-align: center;
+}
+
+/*
+  # -> estilizando um elemento com o atributo id
+  . -> estilizando um elemento com o atributo class
+ */
+
+ /*
+  Header
+ */
+ .header {
+     width: 100%;
+     display: table;
+     background: rgba(0, 0, 0, 0.6);
+ }
+
+ /*
+   Menu
+ */
+ .menu .list {
+    list-style: none;
+ }
+.menu .list .list-item {
+    float: left;
+
+}
+.menu .list .list-item a {
+    float: left;
+    text-decoration: none;
+    /*
+       1: os 4 cantos com o mesmo valor
+       2: topo e baixo com mesmo valor &
+          direita e esquerda mesmo valor
+       3: Topo como seu valor, direita & esquerda 
+       com mesmo valor & baixo com seu valor
+       4: Respeita setindo horário:
+         topo, direita, baixo & esquerda
+    */
+    padding: 15px 20px;
+    /*
+    As linhas abaixo, representam 
+    a chamada acima:
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    */
+    color: #fff;
+    transition: background .6s ease-in-out; 
+}
+
+.menu .list .list-item a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*
+ Content
+ */
+.content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.posts {
+    width: 70%;
+    float: left;
+    background: #036;
+}
+
+.sidebar {
+    width: 28%;
+    float: right;
+    background: rgb(14, 214, 57);
+}
+
+
+
+
