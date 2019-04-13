@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;   
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    /* height: 40px; */
+    display: table;
+    /*
+      cores: 
+         real: black, orange, yellow ...
+         hexadecimal,
+         canais rgb ou rgba
+    */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu .list {
+    list-style: none;
+}
+
+.menu .list .list-item {
+    float: left;
+}
+
+.menu .list .list-item a {
+    color: #fff /* rgb(255, 255, 255)*/;
+    /*
+       1: os 4 cantos com o mesmo valor
+       2: topo e bottom com mesmo valor &
+          diretia e esquerda mesmo valor
+       3: Topo como seu valor, direita esqueda 
+       com mesmo valor
+       & bottom com seu valor
+       4: Respeita setindo horário:
+         topo, direita, bottom & esquerda
+    */
+    padding: 20px 15px;
+    float: left;
+    text-decoration: none; 
+    transition: background .6s ease-in-out;
+}
+
+.menu .list .list-item a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.content {
+    width: 1250px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: table;
+}
+
+.content .posts {
+    width: 70%;
+    background: #036;
+    float: left;
+}
+.content .sidebar {
+    width: 28%;
+    background: #ff0;
+    display: table;
+    float: right;
+}
