@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;   
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    /* height: 40px; */
+    display: table;
+    /*
+      cores: 
+         real: black, orange, yellow ...
+         hexadecimal,
+         canais rgb ou rgba
+    */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu .list {
+    list-style: none;
+}
+
+.menu .list .list-item {
+    float: left;
+}
+
+.menu .list .list-item a {
+    color: #fff /* rgb(255, 255, 255)*/;
+    /*
+       1: os 4 cantos com o mesmo valor
+       2: topo e bottom com mesmo valor &
+          diretia e esquerda mesmo valor
+       3: Topo como seu valor, direita esqueda 
+       com mesmo valor
+       & bottom com seu valor
+       4: Respeita setindo horário:
+         topo, direita, bottom & esquerda
+    */
+    padding: 20px 15px;
+    float: left;
+    text-decoration: none; 
+    transition: background .6s ease-in-out;
+}
+
+.menu .list .list-item a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.content {
+    width: 1250px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: table;
+}
+
+.content .posts {
+    width: 70%;
+    float: left;
+}
+
+.content .posts .post{
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 10px;
+}
+.content .posts .post h2 {
+    transition: all .6s ease-in-out;
+}
+
+.content .posts .post:hover h2 {
+    color: #d5d5d5;
+}
+
+.content .posts .post img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content .posts .post p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
+.content .sidebar {
+    width: 28%;
+    display: table;
+    float: right;
+}
+
+.sidebar .sidebar-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar .sidebar-item .sidebar-item-title {
+    width: 100%;
+    height: 20px;
+    text-align: left;
+    background: #333;
+    color :#fff;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #999;
+    padding-top: 50px;
+}
