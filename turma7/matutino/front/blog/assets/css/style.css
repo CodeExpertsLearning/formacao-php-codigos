@@ -62,12 +62,59 @@ body {
 
 .content .posts {
     width: 70%;
-    background: #036;
     float: left;
 }
+
+.content .posts .post{
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 10px;
+}
+.content .posts .post h2 {
+    transition: all .6s ease-in-out;
+}
+
+.content .posts .post:hover h2 {
+    color: #d5d5d5;
+}
+
+.content .posts .post img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content .posts .post p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
 .content .sidebar {
     width: 28%;
-    background: #ff0;
     display: table;
     float: right;
+}
+
+.sidebar .sidebar-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar .sidebar-item .sidebar-item-title {
+    width: 100%;
+    height: 20px;
+    text-align: left;
+    background: #333;
+    color :#fff;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #999;
+    padding-top: 50px;
 }
