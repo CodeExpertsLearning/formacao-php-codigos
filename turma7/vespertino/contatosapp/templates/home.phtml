@@ -1,0 +1,11 @@
+<h1>Home</h1>
+<hr>
+<ul>
+    <?php foreach($users as $user): ?> 
+        <li>
+            <?=$user['name'];?>
+            -
+            <?=$user['created_at'];?>
+        </li>
+    <?php endforeach; ?>
+</ul>
