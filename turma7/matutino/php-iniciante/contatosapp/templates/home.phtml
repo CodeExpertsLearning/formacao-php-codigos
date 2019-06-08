@@ -5,6 +5,7 @@
     <?php foreach($contacts->fetchAll(PDO::FETCH_ASSOC) as $c):?>
         <li>
             <?=$c['name'];?> - <?=date('d/m/Y H:i:s', strtotime($c['created_at']));?>
+            | <a href="/edicao/<?=$c['id'];?>">EDITAR</a>
         </li>
     <?php endforeach;?>
 </ul>

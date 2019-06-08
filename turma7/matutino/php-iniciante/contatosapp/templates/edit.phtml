@@ -1,1 +1,22 @@
-<h1>Edicao</h1>
+<h1>Editar Usuário</h1>
+
+<form action="/atualizar/<?=$contact['id'];?>" method="post">
+    <p>
+        <label>Nome Completo</label>
+        <input type="text" name="name" 
+        value="<?=$contact['name'];?>">
+    </p>
+
+    <p>
+        <label>Email</label>
+        <input type="email" name="email"
+        value="<?=$contact['email'];?>">
+    </p>
+
+    <p>
+        <label>Senha </label> <br>
+        <small>Caso queira atualizar, preencha a nova abaixo.</small> <br>
+        <input type="password" name="password">
+    </p>
+    <button type="submit">Cadastrar</button>
+</form>
