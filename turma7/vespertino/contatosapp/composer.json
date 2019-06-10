@@ -1,0 +1,6 @@
+{
+    "require": {
+        "cocur/slugify": "^3.2",
+        "phpunit/phpunit": "^8.2"
+    }
+}
