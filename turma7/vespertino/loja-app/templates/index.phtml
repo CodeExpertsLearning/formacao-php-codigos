@@ -1,0 +1,14 @@
+<?php require TEMPLATES . '/includes/header.phtml';?>
+
+<div class="row">
+    <?php foreach($products as $product): ?>
+        <div class="col-md-4">
+            <img src="https://placeimg.com/640/280/any" alt="" class="img-fluid">
+            
+            <h2><?=$product['name'];?></h2>
+            <h4>R$ <?=number_format($product['price'], 2, ',', '.');?></h4>
+        </div>
+    <?php endforeach;?>
+</div>
+
+<?php require TEMPLATES . '/includes/footer.phtml';?>
