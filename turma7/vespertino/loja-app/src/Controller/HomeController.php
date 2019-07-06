@@ -2,17 +2,15 @@
 namespace LojaApp\Controller;
 
 use LojaApp\MVC\View;
+use LojaApp\Model\Product;
+use LojaApp\Database\Connection;
 
 class HomeController
 {
     public function index()
     {
-        $products = [
-            ['name' => 'Produto 1', 'price' => 199.90],
-            ['name' => 'Produto 2', 'price' => 299.90],
-            ['name' => 'Produto 3', 'price' => 399.90],
-            ['name' => 'Produto 4', 'price' => 499.90],
-        ];
+        $products = new Product(Connection::getInstance());
+        $products = $products->findAll(); //todos os produtos do banco...
         
         return View::render('index', compact('products'));
     }

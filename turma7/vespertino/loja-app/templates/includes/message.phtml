@@ -1,0 +1,18 @@
+<?php if(\LojaApp\Http\Flash::has('success')): ?>
+<div class="alert alert-success">
+    <?=\LojaApp\Http\Flash::get('success');?>
+</div>
+<?php endif;?>
+
+<?php if(\LojaApp\Http\Flash::has('warning')): ?>
+<div class="alert alert-warning">
+    <?=\LojaApp\Http\Flash::get('warning');?>
+</div>
+<?php endif;?>
+
+
+<?php if(\LojaApp\Http\Flash::has('error')): ?>
+<div class="alert alert-error">
+    <?=\LojaApp\Http\Flash::get('error');?>
+</div>
+<?php endif;?>

@@ -9,6 +9,7 @@ $controller = isset($url[0]) && $url[0] ? $url[0] : 'home';
 $controller = '\\LojaApp\\Controller\\' . ucfirst($controller) . 'Controller';
 
 $action     = isset($url[1]) && $url[1] ? $url[1] : 'index';
+$parameter  = isset($url[2]) && $url[2] ? $url[2] : null;
 
 if(!class_exists($controller)
 || !method_exists(new $controller, $action)) {
@@ -16,5 +17,6 @@ if(!class_exists($controller)
 }
 
 //new Products() ->index
-$response = call_user_func_array([new $controller, $action], []);
+$response = call_user_func_array([new $controller, $action], [$parameter]);
+
 print $response;
