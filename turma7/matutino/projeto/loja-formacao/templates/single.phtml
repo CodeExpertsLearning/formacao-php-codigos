@@ -1,4 +1,11 @@
 <?php require TEMPLATES . '/includes/header.phtml';?>
+
+<div class="row">
+    <div class="col-12">
+        <?php require TEMPLATES . '/includes/message.phtml';?>
+    </div>
+</div>
+
 <div class="row">
     <div class="col-12">
         <h2><?=$product->name;?></h2>
@@ -17,7 +24,13 @@
             <h4>R$ <?=number_format($product->price, 2, ',', '.');?></h4>
         </p>
         <p>
-            <a href="<?=HOME;?>/cart/add/<?=$product->slug;?>" class="btn btn-lg btn-danger">Adicionar no carrinho</a>
+            <form action="<?=HOME;?>/cart/add" method="post">
+                <input type="hidden" name="name" value="<?=$product->name;?>">
+                <input type="hidden" name="price" value="<?=$product->price;?>">
+                <input type="hidden" name="slug" value="<?=$product->slug;?>">
+
+                <button class="btn btn-lg btn-danger" type="submit">Adicionar no carrinho</button>
+            </form>
         </p>
     </div>
 </div>

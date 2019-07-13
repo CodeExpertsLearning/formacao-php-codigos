@@ -1,0 +1,65 @@
+<?php require TEMPLATES . '/includes/header.phtml';?>
+<div class="row">
+    <div class="col-12">
+        <?php require TEMPLATES . '/includes/message.phtml';?>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <h2>Carrinho</h2>
+        <hr>
+    </div>
+</div>
+
+<div class="row">
+    <?php if(!is_null($cart)): ?>
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+                $total = 0;
+
+                foreach($cart as $c): ?>
+                    <tr>
+                        <td><?=$c['name'];?></td>
+                        <td>R$ <?=number_format($c['price'], 2,',', '.');?></td>
+                        <td>
+                            <a href="<?=HOME;?>/cart/remove/<?=$c['slug'];?>" class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                <?php 
+                    $total += $c['price'];
+                    endforeach;
+                ?>
+                <tr>
+                    <td></td>
+                    <td class="text-left">Total: R$ <?=number_format($total, 2,',', '.');?></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12">
+         <a href="<?=HOME;?>/cart/cancel" class="btn-lg btn btn-danger">Cancelar Compra</a>
+         <a href="<?=HOME;?>/cart/checkout" class="btn-lg btn btn-success float-right">Finalizar Compra</a>
+    </div>
+    <?php else: ?>
+            <div class="col-12">
+                <div class="alert alert-warning">
+                        Carrinho vazio...
+                </div>
+            </div>
+
+    <?php endif;?>
+</div>
+
+<?php require TEMPLATES . '/includes/footer.phtml';?>

@@ -3,5 +3,8 @@
         "psr-4": {
             "LojaApp\\" : "src/"
         }
+    },
+    "require": {
+        "phpsc/pagseguro": "^1.0"
     }
 }
