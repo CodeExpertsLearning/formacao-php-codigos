@@ -3,6 +3,35 @@
     <meta charset="UTF8"> 
     <title>Loja Formação PHP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 30px;">
+  <div class="container">
+    <a class="navbar-brand" href="<?=HOME;?>">Loja Formação</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="<?=HOME;?>">Home <span class="sr-only">(current)</span></a>
+        </li>
+        </ul>
+
+    </div>
+
+    <div class="float-right">
+         <a href="<?=HOME;?>/cart">
+            <?php if(\LojaApp\Http\Session::has('cart')): ?>
+                <span class="badge badge-danger">
+                        <?=count(\LojaApp\Http\Session::get('cart'));?>
+                </span>
+            <?php endif;?>
+            <i class="fa fa-shopping-cart fa-2x"></i>
+        </a>
+    </div>
+    </div>
+</nav>
+
 <div class="container">

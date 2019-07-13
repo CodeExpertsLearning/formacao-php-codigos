@@ -23,7 +23,22 @@
             <h4>R$ <?=number_format($product->price, 2, ',', '.');?></h4>
         </p>
         <p>
-            <a href="<?=HOME;?>/cart/add/<?=$product->slug;?>" class="btn btn-lg btn-danger">Adicionar no carrinho</a>
+            <form action="<?=HOME;?>/cart/add" method="post">
+                
+                <input type="hidden" name="name" value="<?=$product->name;?>">
+                <input type="hidden" name="price" value="<?=$product->price;?>">
+                <input type="hidden" name="slug" value="<?=$product->slug;?>">
+
+                <div class="form-group col-3">
+                    <label>Quantidade</label>
+                    <input type="number" name="qtd" value="1" class="form-control">
+                </div>
+
+                <button class="btn btn-lg btn-danger" type="submit">
+                    Adicionar no carrinho
+                </button>
+
+            </form>
         </p>
     </div>
 </div>

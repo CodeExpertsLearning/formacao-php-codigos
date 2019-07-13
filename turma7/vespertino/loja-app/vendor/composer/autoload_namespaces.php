@@ -6,4 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src'),
+    'PhpCollection' => array($vendorDir . '/phpcollection/phpcollection/src'),
+    'Metadata\\' => array($vendorDir . '/jms/metadata/src'),
+    'JMS\\Serializer' => array($vendorDir . '/jms/serializer/src'),
+    'JMS\\' => array($vendorDir . '/jms/parser-lib/src'),
 );
